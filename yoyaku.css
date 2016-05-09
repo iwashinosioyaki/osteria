@@ -1,0 +1,177 @@
+@charset"utf-8";
+
+body{
+	text-align: center;
+	color:#666666;
+	background-image:url(images/sub_back.png);	
+}
+
+#contents{
+	margin-right:50px;
+	margin-left: 50px;
+	}
+	
+	h1{
+		font-size:36px;
+		color:#943434;
+		font-family:Georgia,"Times New Roman",Times,serif;
+		letter-spacing:15px;
+	background-image:url(images/tail.gif);
+	background-repeat:repeat-x;/*横方向だけに繰り返し*/
+	}
+
+    h2{
+	font-size:18px;
+	color:#FFFFFF;
+	background-color:#71b017;
+	margin-bottom: 0;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	}
+	
+	form{
+		font-size:14px;
+		text-align:left;
+	background-color:#ffffff;
+	line-height:150%;
+	margin-top: 0;
+	margin-bottom:15px;
+	padding:20px;
+	}
+
+	textarea{
+			margin-bottom: 10px;
+		}
+		
+		#gotop{
+			font-size:14px;
+			border-top:dotted #aca961 4px;
+			padding-top:15px;
+			margin-bottom:20px;
+		}
+		
+		#gotop a{
+			padding-left:15px;
+			background:url(images/yaji.png)
+			no-repeat left;
+		}
+		
+		a{
+			text-decoration:none;
+			font-weight:bold;
+			transition:All 0.5s ease-in;/*マウスオーバーでゆっくり変わる*/
+		color:#943434/*色も大きさも全て0｡5秒かけてゆっくり変わる*/
+		}
+		
+		a:visited{
+			color:#33ff66;
+		}/*既リンク*/
+		
+		a:hover{
+           color:#99ff33;
+            text-decolation:underline;	
+		}/*カーソルが乗った時色が変わってアンダーラインがつく*/
+		active{
+		color:#3f6;
+		}/*クリックの瞬間*/
+		
+		.xdsoft_datetimepicker.xdsoft_dark{
+	box-shadow: 0px 5px 15px -5px rgba(255, 255, 255, 0.506);
+	background: #000000;
+	border-bottom: 1px solid #444444;
+	border-left: 1px solid #333333;
+	border-right: 1px solid #333333;
+	border-top: 1px solid #333333;
+	color: #cccccc;
+}
+
+.xdsoft_datetimepicker.xdsoft_dark  .xdsoft_timepicker .xdsoft_time_box{
+	border-bottom:1px solid #222222;
+}
+.xdsoft_datetimepicker.xdsoft_dark  .xdsoft_timepicker .xdsoft_time_box >div >div{
+	background: #0a0a0a;
+	border-top:1px solid #222222;
+	color: #999999;
+}
+
+.xdsoft_datetimepicker.xdsoft_dark  .xdsoft_label{
+    background-color: #000;
+}
+.xdsoft_datetimepicker.xdsoft_dark  .xdsoft_label > .xdsoft_select{
+	border:1px solid #333;
+	background:#000;
+}
+
+.xdsoft_datetimepicker.xdsoft_dark  .xdsoft_label > .xdsoft_select > div > .xdsoft_option:hover{
+	color: #000;
+    background: #007fff;
+}
+
+.xdsoft_datetimepicker.xdsoft_dark  .xdsoft_label > .xdsoft_select > div > .xdsoft_option.xdsoft_current{
+	background: #cc5500;
+	box-shadow: #b03e00 0px 1px 3px 0px inset;
+	color:#000;
+}
+
+.xdsoft_datetimepicker.xdsoft_dark  .xdsoft_label i,
+.xdsoft_datetimepicker.xdsoft_dark  .xdsoft_prev, 
+.xdsoft_datetimepicker.xdsoft_dark  .xdsoft_next,
+.xdsoft_datetimepicker.xdsoft_dark  .xdsoft_today_button{
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAAAeCAYAAADaW7vzAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6QUExQUUzOTA0M0UyMTFFNDlBM0FFQTJENTExRDVBODYiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6QUExQUUzOTE0M0UyMTFFNDlBM0FFQTJENTExRDVBODYiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpBQTFBRTM4RTQzRTIxMUU0OUEzQUVBMkQ1MTFENUE4NiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpBQTFBRTM4RjQzRTIxMUU0OUEzQUVBMkQ1MTFENUE4NiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Pp0VxGEAAAIASURBVHja7JrNSgMxEMebtgh+3MSLr1T1Xn2CHoSKB08+QmR8Bx9A8e7RixdB9CKCoNdexIugxFlJa7rNZneTbLIpM/CnNLsdMvNjM8l0mRCiQ9Ye61IKCAgZAUnH+mU3MMZaHYChBnJUDzWOFZdVfc5+ZFLbrWDeXPwbxIqrLLfaeS0hEBVGIRQCEiZoHQwtlGSByCCdYBl8g8egTTAWoKQMRBRBcZxYlhzhKegqMOageErsCHVkk3hXIFooDgHB1KkHIHVgzKB4ADJQ/A1jAFmAYhkQqA5TOBtocrKrgXwQA8gcFIuAIO8sQSA7hidvPwaQGZSaAYHOUWJABhWWw2EMIH9QagQERU4SArJXo0ZZL18uvaxejXt/Em8xjVBXmvFr1KVm/AJ10tRe2XnraNqaJvKE3KHuUbfK1E+VHB0q40/y3sdQSxY4FHWeKJCunP8UyDdqJZenT3ntVV5jIYCAh20vT7ioP8tpf6E2lfEMwERe+whV1MHjwZB7PBiCxcGQWwKZKD62lfGNnP/1poFAA60T7rF1UgcKd2id3KDeUS+oLWV8DfWAepOfq00CgQabi9zjcgJVYVD7PVzQUAUGAQkbNJTBICDhgwYTjDYD6XeW08ZKh+A4pYkzenOxXUbvZcWz7E8ykRMnIHGX1XPl+1m2vPYpL+2qdb8CDAARlKFEz/ZVkAAAAABJRU5ErkJggg==);
+}
+
+.xdsoft_datetimepicker.xdsoft_dark  .xdsoft_calendar td,
+.xdsoft_datetimepicker.xdsoft_dark  .xdsoft_calendar th{
+	background: #0a0a0a;
+	border:1px solid #222222;
+	color: #999999;
+}
+
+.xdsoft_datetimepicker.xdsoft_dark  .xdsoft_calendar th{
+	background: #0e0e0e;
+}
+.xdsoft_datetimepicker.xdsoft_dark  .xdsoft_calendar td.xdsoft_today{
+	color:#cc5500;
+}
+.xdsoft_datetimepicker.xdsoft_dark  .xdsoft_calendar td.xdsoft_default,
+.xdsoft_datetimepicker.xdsoft_dark  .xdsoft_calendar td.xdsoft_current,
+.xdsoft_datetimepicker.xdsoft_dark  .xdsoft_timepicker .xdsoft_time_box >div >div.xdsoft_current{
+	background: #cc5500;
+	box-shadow: #b03e00 0px 1px 3px 0px inset;
+	color:#000;
+}
+
+.xdsoft_datetimepicker.xdsoft_dark  .xdsoft_calendar td:hover,
+.xdsoft_datetimepicker.xdsoft_dark  .xdsoft_timepicker .xdsoft_time_box >div >div:hover{
+	color: #000 !important;
+    background: #007fff !important;
+}
+
+.xdsoft_datetimepicker.xdsoft_dark  .xdsoft_calendar th{
+	color: #666;
+}
+.xdsoft_datetimepicker.xdsoft_dark  .xdsoft_copyright{ color:#333 !important;}
+.xdsoft_datetimepicker.xdsoft_dark  .xdsoft_copyright a{ color:#111 !important;}
+.xdsoft_datetimepicker.xdsoft_dark .xdsoft_copyright a:hover{ color:#555 !important;}
+
+
+.xdsoft_dark .xdsoft_time_box{
+	border:1px solid #333;
+}
+.xdsoft_dark .xdsoft_scrollbar >.xdsoft_scroller{
+	background:#333 !important;
+}
+
+.none{display:none}
+.block{display:block}
+input{box-shadow: inset 1px 4px 9px -6px
+rgba(0,0,0,0.3);}
+
+input{margin:5px 2px}
+input[name="zip1"]{width:30px}
+input[name="zip2"]{width:40px}
+input[name="pref"]{width:60px}
+input[name="citiy"]{width:100px}
+input[name="addr"]{width:300px}
+
+

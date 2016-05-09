@@ -1,0 +1,102 @@
+@charset"utf-8";
+
+body{
+	text-align: center;
+	color:#666666;
+	background-image:url(images/sub_back.png);
+	margin:0;
+	padding:0;	
+}
+
+#contents{
+	margin-right:50px;
+	margin-left: 50px;
+	}
+	
+	h1{
+		font-size:36px;
+		color:#943434;
+		font-family:Georgia,"Times New Roman",Times,serif;
+		letter-spacing:15px;
+	background-image:url(images/tail.gif);
+	background-repeat:repeat-x;/*横方向だけに繰り返し*/
+	}
+#select{
+	background-color:#aca641;
+	padding:5px;
+	font-size:16px;
+}
+
+    h2{
+	font-size:18px;
+	color:#FFFFFF;
+	background-color:#71b017;
+	margin-bottom: 0;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	}
+	
+	p{
+		font-size:14px;
+		text-align:left;
+	background-color:#ffffff;
+	line-height:150%;
+	margin-top: 0;
+	padding:20px;
+	}
+	.menu-box p{margin-top: 0 ;
+	margin-bottom: 0;
+	min-height: 160px;
+	}
+	
+	#yatai{min-height: inherit;}
+	
+	img.photo{
+		float: left;
+		margin-right:20px;
+		margin-bottom:10px;
+		}
+		
+		span.menu{
+			clear: left;
+			display:block;
+		}
+		
+		#gotop{
+			font-size:14px;
+			border-top:dotted #aca961 4px;
+			padding-top:15px;
+			margin-bottom:20px;
+		}
+		
+		#gotop a{
+			padding-left:15px;
+			background:url(images/yaji.png)
+			no-repeat left;
+		}
+		
+		#select a{
+			text-decoration:none;
+			font-weight:bold;
+			transition:All 0.5s ease-in;/*マウスオーバーでゆっくり変わる*/
+		color:#943434/*色も大きさも全て0｡5秒かけてゆっくり変わる*/
+		}
+		
+		a:link{
+		
+		}/*なくても同じ*/
+		
+		a:visited{
+			color:#33ff66;
+		}/*既リンク*/
+		
+		#select a:hover{
+           color:#99ff33;
+            text-decolation:underline;	
+		}/*カーソルが乗った時色が変わってアンダーラインがつく*/
+		active{
+		color:#3f6;
+		}/*クリックの瞬間*/
+
+.menu-box img{box-shadow:3px 5px 6px #666;/*画像に影つける*/
+border-radius:15px;}/*四隅が丸くなる*/
